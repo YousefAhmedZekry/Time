@@ -1,0 +1,113 @@
+/* Fixed Rules */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Main Variables */
+:root {
+    --main-Color: ;
+    --second-Color: #212529;
+    --main-Padding: 90px;
+    --padding-y: 50px 0;
+    --main-Border: 1px solid black;
+    --main-Px: 4px;
+    --main-Background-Color: #EEE;
+    --main-Transition: 0.3s;
+}
+
+/* Fixed Values */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: ltr;
+    position: relative;
+    /* min-height: 2000px; */
+    /* font-family: 'Lato', sans-serif; */
+    min-height: 4000px;
+}
+
+div, h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+input, textarea {
+    outline: none;
+    border: var(--main-Border);
+    padding: var(--main-Px);
+    margin: 0;
+    padding: 7px 10px !important;
+    color: #777
+}
+
+textarea {
+    resize: none;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    display: flex;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #CCC;
+    padding: 5px 14px;
+    border-radius: calc(var(--main-Px) - 1px);
+}
+
+/* Start Header */
+.time {
+    width: 100%;
+    background-color: #EEE;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+
+.time div {
+    background-color: black;
+    padding: 10px;
+    color: #FFF;
+}
